@@ -143,15 +143,15 @@ impl Packet {
         self.0.dts = value.unwrap_or(AV_NOPTS_VALUE);
     }
 
-    #[inline]
-    pub fn time_base(&self) -> Rational {
-        self.0.time_base.into()
-    }
+    // #[inline]
+    // pub fn time_base(&self) -> Rational {
+    //     self.0.time_base.into()
+    // }
 
-    #[inline]
-    pub fn set_time_base(&mut self, value: Rational) {
-        self.0.time_base = value.into();
-    }
+    // #[inline]
+    // pub fn set_time_base(&mut self, value: Rational) {
+    //     self.0.time_base = value.into();
+    // }
 
     #[inline]
     pub fn size(&self) -> usize {
